@@ -1,0 +1,39 @@
+<app-header (featureSelected)="onNavigate($event)"></app-header>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <!-- <app-recipe *ngIf="loadedFeature === 'recipe'"></app-recipe>
+          <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list> -->
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgba(126, 122, 122, 0.479);
+   color: rgba(2, 0, 0, 0.932);
+   text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="footer">
+  <p>POWERED BY: Rico&Hanif</p>
+</div>
+
+</body>
+</html> 
+

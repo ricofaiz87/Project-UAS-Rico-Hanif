@@ -1,0 +1,62 @@
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('koi1.jpg');
+    min-height: 100%;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
+</style>
+<body>
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT FISH COLLECTION</h3>
+  <p class="w3-center"><em></em></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>INDONESIA</b></p><br><br>
+      <img src="fish.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Database Pengumpulan Ikan online mencakup semua informasi yang relevan untuk setiap banyak spesimen katalog. Harap dicatat bahwa sedikit lebih dari 50% dari kepemilikan kami saat ini terdaftar dan kami terus menambahkan catatan. Saat ini hanya ada sejumlah kecil gambar yang terkait dengan catatan katalog. Sekitar 95% keluarga dengan spesies yang hidup di air tawar, tetapi kurang dari 50% dari mereka yang tinggal di air asin dimasukkan ke dalam database dan tersedia untuk pencarian online. Data yang termasuk dalam bidang Lokalitas secara langsung dari catatan lapangan kolektor atau dari log pelayaran. Bidang pencarian geografis ditambahkan oleh staf katalogisasi didasarkan pada kriteria internal yang ditentukan dan mungkin tidak akurat secara geografis.
+        </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
